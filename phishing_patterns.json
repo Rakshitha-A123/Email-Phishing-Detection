@@ -1,0 +1,83 @@
+{
+    "patterns": {
+        "urgency_words": {
+            "weight": 15,
+            "terms": [
+                "urgent", "immediate", "now", "verify", "suspended", "locked", 
+                "security", "unusual", "unauthorized", "limited time", "warning",
+                "alert", "attention", "action required", "expire", "deadline",
+                "critical", "important", "asap", "quickly"
+            ]
+        },
+        "sensitive_words": {
+            "weight": 20,
+            "terms": [
+                "password", "credit card", "social security", "ssn", "account",
+                "login", "bank", "verify", "confirm", "validate", "credentials",
+                "sign in", "username", "pin", "security question", "authentication",
+                "identity", "personal", "private"
+            ]
+        },
+        "financial_words": {
+            "weight": 15,
+            "terms": [
+                "money", "cash", "payment", "wire", "transfer", "transaction",
+                "bank", "account", "credit", "debit", "fund", "dollar", "$",
+                "bitcoin", "crypto", "wallet", "deposit", "refund", "tax",
+                "investment", "loan"
+            ]
+        },
+        "threat_words": {
+            "weight": 20,
+            "terms": [
+                "suspended", "terminated", "deleted", "blocked", "limited",
+                "closed", "reported", "unauthorized", "suspicious", "disabled",
+                "restricted", "violation", "security breach", "compromised",
+                "hacked", "fraud", "risk", "warning"
+            ]
+        },
+        "prize_words": {
+            "weight": 25,
+            "terms": [
+                "won", "winner", "prize", "reward", "congratulation", "selected",
+                "lottery", "claim", "free", "gift", "bonus", "exclusive offer",
+                "lucky", "jackpot", "promotion", "special offer"
+            ]
+        },
+        "phishing_phrases": {
+            "weight": 30,
+            "terms": [
+                "verify your account",
+                "confirm your identity",
+                "update your information",
+                "click here",
+                "click the link",
+                "login to continue",
+                "unusual activity",
+                "suspicious activity",
+                "account alert",
+                "security alert",
+                "password expired",
+                "account suspended",
+                "limited time offer",
+                "act now",
+                "your account has been compromised",
+                "confirm your details",
+                "update required",
+                "security update needed"
+            ]
+        }
+    },
+    "url_patterns": {
+        "weight": 25,
+        "suspicious_domains": [
+            "secure", "account", "banking", "verify", "update", "login",
+            "confirm", "support", "security", "service", "auth"
+        ]
+    },
+    "thresholds": {
+        "high_risk": 70,
+        "medium_risk": 35,
+        "low_risk": 15
+    }
+}
